@@ -5,7 +5,7 @@ const fetchImage=()=>{
     var xhrRequest= new XMLHttpRequest();
 
     xhrRequest.onload=()=>{
-        console.log(xhrRequest.response);
+        //console.log(xhrRequest.response);
 
         var JSONresponse=JSON.parse(xhrRequest.response);
         var imageUrl=JSONresponse.message;
