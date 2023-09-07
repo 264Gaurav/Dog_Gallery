@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dog Gallery</title>
-    <style>
+     <style>
         body{
             margin: 0;
             padding: 0;
@@ -25,10 +25,19 @@
         }
         .img{
             margin: auto;
-            height: 25em;
-            width: 30em;
+            height: 60vh;
+            width: 40vw;
             border: 2px solid red;
             border-radius: 2%;
+        }
+        @media screen and (max-width: 1300px) {
+            .img{
+            margin: auto;
+            height: 60vh;
+            width: 60vw;
+            border: 2px solid red;
+            border-radius: 2%;
+           }
         }
         img{
             width: 100%;
@@ -44,8 +53,15 @@
             border: 2px sold white;
             background-color: blue;
             color: white;
-            border-radius: 2px;
+            border-radius: 5px;
         }
+
+        .btn:hover{
+            background-color: white;
+            color: blue;
+            transition: all 0.5s;
+        }
+        
 
 
     </style>
